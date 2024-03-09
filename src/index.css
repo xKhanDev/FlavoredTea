@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-meron{
+    background-color: #360B0C;
+}
+.text-meron{
+    color: #360B0C;
+}
+.bg-gray{
+    background-color:#B5B1B1;
+}
