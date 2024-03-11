@@ -16,13 +16,8 @@ const App = () => {
   return (
     <>
       <DataContext.Provider value={jsonData}>
-        <div className="w-full h-full hidden">
-          <img
-            src={bg}
-            className="w-full h-full cover relative blur-lg opacity-70"
-          />
-        </div>
-        <div className="w-full md:p-4 md:my-0 md:mx-auto lg:p-10 lg:my-0 lg:mx-auto absolute left-0 top-0 bg-gray">
+        <div className="w-full h-full bg-white blur-3xl"></div>
+        <div className="w-full md:p-4 md:my-0 md:mx-auto lg:p-10 lg:my-0 lg:mx-auto absolute left-0 top-0 bg-slate-500">
           <Navbar />
           <MainSection />
           <CardSection />

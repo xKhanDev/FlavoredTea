@@ -57,8 +57,8 @@ const Navbar = () => {
           </ul>
         </div>
       )}
-      <div>
-        <span className="w-full flex items-center justify-center text-3xl font-bold gap-2 mt-5 lg:justify-start lg:mt-0 lg:w-1/2">
+      <div className="*:text-white">
+        <span className="w-full flex items-center justify-center text-3xl font-bold gap-2 mt-5 lg:justify-start lg:mt-0 lg:w-1/2 ">
           Flavored <img src={logo} alt="logo" className="size-9" />
         </span>
         <p className="hidden lg:flex">Wake up for something Special</p>
@@ -67,16 +67,16 @@ const Navbar = () => {
       {/* -----------------------------web manu-------------------------------------- */}
       <div className="hidden lg:flex w-1/2 px-5 p-2 overflow-y-hidden">
         <ul className="w-full flex items-center justify-between gap-1 *:text-lg *:w-full *:text-center *:font-medium">
-          <li className="p-2 text-black hover:scale-105 hover:text-white">
+          <li className="p-2 text-gray-300 hover:scale-105 hover:text-white">
             <a href="#">Home</a>
           </li>
-          <li className="p-2 text-black hover:scale-105 hover:text-white">
+          <li className="p-2 text-gray-300 hover:scale-105 hover:text-white">
             <a href="#">Coffe Menu</a>
           </li>
-          <li className="p-2 text-black hover:scale-105 hover:text-white">
+          <li className="p-2 text-gray-300 hover:scale-105 hover:text-white">
             <a href="#">About Us</a>
           </li>
-          <li className="p-2 text-black hover:scale-105 hover:text-white">
+          <li className="p-2 text-gray-300 hover:scale-105 hover:text-white">
             <a href="#">Contact Us</a>
           </li>
           <li className="p-2 rounded-3xl text-white bg-meron cursor-pointer w-36 text-center hover:bg-white hover:text-black hover:scale-105">
