@@ -5,11 +5,11 @@ import app from "../../public/images/app.png";
 
 const AppSection = () => {
   return (
-    <div className="flex flex-col justify-between w-full h-screen p-2 items-center mt-10 lg:flex-row lg:-mt-2">
-      <div className="w-full h-1/2 px-6 lg:w-1/2 lg:h-screen">
+    <div className="flex flex-col justify-between w-full h-screen p-2 items-center mt-10 md:flex-row md:h-1/2 lg:flex-row lg:-mt-2 md:mb-10">
+      <div className="w-full h-1/2 px-6 md:w-1/2 md:full lg:w-1/2 lg:h-screen">
         <img src={app} alt="mobile app images" className="" />
       </div>
-      <div className=" w-full mt-4 flex flex-col gap-3 lg:w-1/2">
+      <div className="mt-6 w-full h-1/2 flex flex-col gap-3 md:w-1/2 md:full lg:w-1/2">
         <h2 className="text-2xl font-bold">App is Available</h2>
         <p className="text-balance text-sm">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium

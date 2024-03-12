@@ -12,7 +12,7 @@ const Footer = () => {
           <p className="hidden lg:flex">Wake up for something Special</p>
         </div>
         <div className="w-1/3 lg:w-1/4">
-          <label className="font-bold text-lg capitalize">our services</label>
+          <label className="font-bold capitalize">our services</label>
           <ul className="flex flex-col gap-2 *:cursor-pointer *:text-meron">
             <li>
               <a href="#">link 1</a>
@@ -29,7 +29,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="w-1/3 lg:w-1/4">
-          <label className="font-bold text-lg capitalize">our company</label>
+          <label className="font-bold capitalize">our company</label>
           <ul className="flex flex-col gap-2 *:cursor-pointer">
             <li>
               <a href="#">link 1</a>
@@ -46,7 +46,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="w-1/3 lg:w-1/4">
-          <label className="font-bold text-lg capitalize">our address</label>
+          <label className="font-bold capitalize">our address</label>
           <ul className="flex flex-col gap-2 *:cursor-pointer">
             <li>
               <a href="#">link 1</a>
@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full text-center mt-6 mb-2 lg:mt-12 lg:mb-0">
-        <span className="flex justify-center gap-2">
+        <span className="flex justify-center gap-2 text-xs">
           All Right reserved by safeer ullah khan <a href="#">Linkden</a>{" "}
           <a href="#">github</a>
         </span>

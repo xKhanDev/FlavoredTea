@@ -7,18 +7,18 @@ const CardSection = () => {
   const filterData = jsonData.products.slice(0, 2);
   return (
     <div className="w-full flex flex-col p-2 -mt-8 lg:flex-row lg:-mt-20 lg:items-center">
-      <div className="w-full flex justify-center gap-2">
+      <div className="w-full flex flex-col justify-center gap-12 md:flex-row lg:flex-row">
         {filterData.map((product) => {
           return (
             <div className="" key={product.id}>
               <div>
                 <img
                   src={product.image}
-                  className="size-36 z-10 my-0 mx-auto mb-2"
+                  className="size-36 z-10 my-0 mx-auto"
                 />
               </div>
 
-              <div className="size-52 rounded-3xl bg-gray-300 p-2 flex flex-col justify-center gap-1 -mt-20">
+              <div className="size-52 rounded-3xl bg-gray-300 p-2 flex flex-col justify-center gap-1 -mt-12 my-0 mx-auto">
                 <h2 className="text-meron font-semibold text-lg mt-20">
                   {product.name}
                 </h2>

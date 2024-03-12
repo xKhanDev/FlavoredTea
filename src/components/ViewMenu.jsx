@@ -2,7 +2,7 @@ import React from "react";
 
 const ViewMenu = () => {
   return (
-    <section className="w-full mt-6 flex">
+    <section className="w-full -mt-4 flex">
       <div className="w-full flex flex-col px-4">
         <div className="border-white border-b-2 flex w-full justify-between items-center">
           <div className="flex flex-col">
