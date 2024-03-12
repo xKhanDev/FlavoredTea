@@ -65,8 +65,16 @@ const Footer = () => {
       </div>
       <div className="w-full text-center mt-6 mb-2 lg:mt-12 lg:mb-0">
         <span className="flex justify-center gap-2 text-xs">
-          All Right reserved by safeer ullah khan <a href="#">Linkden</a>{" "}
-          <a href="#">github</a>
+          All Right reserved by safeer ullah khan{" "}
+          <a
+            href="https://www.linkedin.com/in/safeer-khan-x/"
+            className="font-bold"
+          >
+            Linkden
+          </a>
+          <a href="https://github.com/xKhanDev" className="font-bold">
+            github
+          </a>
         </span>
       </div>
     </div>
