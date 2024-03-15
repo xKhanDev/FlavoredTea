@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import logo from "../../public/images/logo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 
@@ -8,8 +10,10 @@ const Navbar = () => {
     <nav className="w-full items-center lg:flex lg:justify-between z-40">
       <div className="absolute top-5 left-5 lg:hidden z-50">
         {openManu ? (
-          <button
+          <motion.button
             className="btn btn-circle btn-outline bg-white p-1 flex justify-center items-center rounded-full size-12"
+            whileTap={{ scale: 0.98 }}
+            transition={{ type: "spring", duration: 0.6, bounce: 0.3 }}
             onClick={() => setOpenManu(!openManu)}
           >
             <svg
@@ -26,7 +30,7 @@ const Navbar = () => {
                 d="M6 18L18 6M6 6l12 12"
               />
             </svg>
-          </button>
+          </motion.button>
         ) : (
           <span
             onClick={() => setOpenManu(!openManu)}
@@ -38,7 +42,7 @@ const Navbar = () => {
       </div>
       {openManu && (
         <div className="absolute top-0 w-1/2 h-screen px-5 bg-meron p-2 flex items-center md:flex md:left-0 lg:hidden">
-          <ul className="w-full flex flex-col items-left justify-between gap-1 *:text-lg *:text-white *:w-full">
+          <motion.ul className="w-full flex flex-col items-left justify-between gap-1 *:text-lg *:text-white *:w-full">
             <li className="p-2 hover:bg-black hover:text-white">
               <a href="#">Home</a>
             </li>
@@ -54,7 +58,7 @@ const Navbar = () => {
             <li className="mt-8 p-2 rounded-3xl bg-red-900 text-white cursor-pointer w-36 text-center hover:bg-white hover:text-black">
               Coffe Shop
             </li>
-          </ul>
+          </motion.ul>
         </div>
       )}
       <div className="*:text-white">
@@ -79,7 +83,7 @@ const Navbar = () => {
           <li className="p-2 text-gray-200 hover:scale-105 hover:text-white">
             <a href="#">Contact Us</a>
           </li>
-          <li className="p-2 rounded-3xl text-white bg-meron cursor-pointer w-36 text-center hover:bg-white hover:text-black hover:scale-105">
+          <li className="p-2 rounded-3xl text-white bg-meron cursor-pointer w-36 text-center hover:bg-white hover:text-black hover:scale-105 hover:shadow-md hover:shadow-black">
             Coffe Shop
           </li>
         </ul>

@@ -3,7 +3,7 @@ import logo from "../../public/images/logo.png";
 
 const Footer = () => {
   return (
-    <div className="w-full mt-10 flex flex-col p-4 bg-gray-400">
+    <div className="w-full mt-10 flex flex-col p-4 bg-gray-400 lg:mt-20">
       <div className="w-full flex gap-2">
         <div className="hidden lg:flex flex-col lg:w-1/4 text-meron">
           <span className="w-full flex items-center justify-center text-3xl font-bold gap-2 mt-5 lg:justify-start lg:mt-0 lg:w-1/2">

@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { motion } from "framer-motion";
 import { MdOutlineFavoriteBorder, MdOutlineShoppingCart } from "react-icons/md";
 import { DataContext } from "../App";
 
@@ -9,8 +10,22 @@ const CardSection = () => {
     .slice(0, 2);
 
   return (
-    <div className="w-full flex flex-col p-2 -mt-8 lg:flex-row lg:-mt-20 lg:items-center">
-      <div className="w-full flex flex-col justify-center gap-12 md:flex-row lg:flex-row">
+    <section className="w-full flex flex-col p-2 -mt-8 lg:flex-row lg:-mt-20 lg:items-center">
+      <motion.div
+        className="w-full flex flex-col justify-center gap-12 md:flex-row lg:flex-row"
+        initial={{
+          opacity: 0,
+          x: -50,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0, // Slide in to its original position
+          transition: {
+            duration: 1, // Animation duration
+          },
+        }}
+        viewport={{ once: true }}
+      >
         {filterData.map((product) => {
           return (
             <div className="" key={product.id}>
@@ -36,10 +51,23 @@ const CardSection = () => {
             </div>
           );
         })}
-        {/* -----------------card----------------------- */}
-      </div>
-      <div className="w-full mt-10 p-4">
-        <span className="font-bold text-lg">
+      </motion.div>
+      <motion.div
+        className="w-full mt-10 p-4"
+        initial={{
+          opacity: 0,
+          x: 50,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 1, // Animation duration
+          },
+        }}
+        viewport={{ once: true }}
+      >
+        <span className="font-bold text-lg capitalize text-meron">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
           asperiores.
         </span>
@@ -54,8 +82,8 @@ const CardSection = () => {
             Learn More
           </button>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </section>
   );
 };
 

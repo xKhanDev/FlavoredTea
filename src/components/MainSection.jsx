@@ -11,9 +11,11 @@ const MainSection = () => {
         <img src={lovecoffe2} className="" />
       </div>
       <div className="h-1/2 *:capitalize flex flex-col justify-center items-center gap-2 -mt-20 lg:w-1/2 lg:h-full lg:justify-center lg:items-start md:items-start">
-        <span className="text-3xl font-bold lg:text-6xl">Coffe</span>
-        <span className="text-3xl font-bold lg:text-6xl">The best for you</span>
-        <button className="w-32 md:w-1/3 text-center p-2 bg-meron text-white rounded-3xl mt-2 hover:bg-white hover:text-black">
+        <span className="text-3xl font-bold lg:text-6xl text-meron">Coffe</span>
+        <span className="text-3xl font-bold lg:text-6xl text-meron">
+          The best for you
+        </span>
+        <button className="w-32 md:w-1/3 text-center p-2 bg-meron text-white rounded-3xl mt-2 hover:bg-white hover:text-black hover:shadow-md hover:shadow-black">
           View Menu
         </button>
         <div className="flex items-center *:text-6xl gap-6 mt-8 *:text-meron *:bg-white *:rounded-lg *:p-2">
