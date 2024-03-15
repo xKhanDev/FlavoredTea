@@ -10,7 +10,7 @@ import {
   Menu,
 } from "./components/index";
 import bg from "../public/images/bg.jpg";
-import jsonData from "../data.json";
+import jsonData from "./data.json";
 
 export const DataContext = createContext();
 const App = () => {
