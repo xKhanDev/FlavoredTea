@@ -7,6 +7,7 @@ import {
   About,
   ViewMenu,
   Footer,
+  Menu,
 } from "./components/index";
 import bg from "../public/images/bg.jpg";
 import jsonData from "../data.json";
@@ -31,6 +32,7 @@ const App = () => {
           <AppSection />
           <ViewMenu />
           <Footer />
+          {/* <Menu /> */}
         </div>
       </DataContext.Provider>
     </>

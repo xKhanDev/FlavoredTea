@@ -5,35 +5,35 @@
             "name":"Green Tea",
             "image":"/public/images/greentea.png",
             "description":" 100% Natural Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, delectus?",
-            "price":"$10.00"
+            "price":"7.50"
         },
         {
             "id":2,
             "name":"Black Tea",
             "image":"/public/images/blacktea.png",
             "description":" 100% Natural Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, delectus?",
-            "price":"$7.00"
+            "price":"7.00"
         },
         {
             "id":3,
             "name":"Americano",
             "image":"/public/images/lovecoffe.png",
             "description":" 100% Natural Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, delectus?",
-            "price":"$10.00"
+            "price":"10.00"
         },
         {
             "id":4,
             "name":"Cafichino",
             "image":"/public/images/lovecoffe3.png",
             "description":" 100% Natural Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, delectus?",
-            "price":"$10.00"
+            "price":"8.50"
         },
         {
             "id":5,
             "name":"Love Art Coffe",
             "image":"/public/images/centerlovecoffe.png",
             "description":" 100% Natural Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, delectus?",
-            "price":"$10.00"
+            "price":"8.00"
         }
     ]
 }
