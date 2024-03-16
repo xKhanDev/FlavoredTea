@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { motion } from "framer-motion";
 import { MdOutlineFavoriteBorder, MdOutlineShoppingCart } from "react-icons/md";
 import { DataContext } from "../App";
@@ -11,6 +11,7 @@ const CardSection = () => {
 
   return (
     <section className="w-full flex flex-col p-2 -mt-8 lg:flex-row lg:-mt-20 lg:items-center">
+      {/* ------------------------- left side content------------------ */}
       <motion.div
         className="w-full flex flex-col justify-center gap-12 md:flex-row lg:flex-row"
         initial={{
@@ -26,6 +27,7 @@ const CardSection = () => {
         }}
         viewport={{ once: true }}
       >
+        {/* ------------------------- left side cards------------------ */}
         {filterData.map((product) => {
           return (
             <div className="" key={product.id}>
@@ -41,17 +43,34 @@ const CardSection = () => {
                   {product.description}
                 </span>
                 <div className="flex gap-8 mx-auto my-2 *:bg-white *:size-8 *:p-1 *:rounded-xl *:cursor-pointer">
-                  <MdOutlineShoppingCart />
-                  <MdOutlineFavoriteBorder />
+                  <motion.button
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ type: "spring", duration: 0.5, bounce: 0.6 }}
+                    className="flex justify-center items-center text-lg"
+                  >
+                    <MdOutlineShoppingCart />
+                  </motion.button>
+                  <motion.button
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ type: "spring", duration: 0.5, bounce: 0.6 }}
+                    className="flex justify-center items-center text-lg"
+                  >
+                    <MdOutlineFavoriteBorder />
+                  </motion.button>
                 </div>
-                <button className="bg-meron rounded-2xl text-white w-20 p-2 my-0 mx-auto hover:text-black hover:bg-white hover:shadow-md hover:shadow-black">
+                <motion.button
+                  className="bg-meron rounded-2xl text-white w-20 p-2 my-0 mx-auto hover:text-black hover:bg-white hover:shadow-md hover:shadow-black"
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", duration: 0.5, bounce: 0.6 }}
+                >
                   ${product.price}
-                </button>
+                </motion.button>
               </div>
             </div>
           );
         })}
       </motion.div>
+      {/* ------------------------- right side content------------------ */}
       <motion.div
         className="w-full mt-10 p-4"
         initial={{
@@ -78,9 +97,13 @@ const CardSection = () => {
           consequatur possimus?
         </p>
         <div className="flex justify-center lg:justify-start">
-          <button className="w-28 text-center mt-6 bg-meron text-white rounded-2xl p-2 hover:text-black hover:bg-white hover:shadow-md hover:shadow-black">
+          <motion.button
+            className="w-28 text-center mt-6 bg-meron text-white rounded-2xl p-2 hover:text-black hover:bg-white hover:shadow-md hover:shadow-black"
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", duration: 0.5, bounce: 0.6 }}
+          >
             Learn More
-          </button>
+          </motion.button>
         </div>
       </motion.div>
     </section>

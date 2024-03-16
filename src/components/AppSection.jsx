@@ -7,6 +7,7 @@ import app from "../../public/images/app.png";
 const AppSection = () => {
   return (
     <div className="flex flex-col justify-between w-full h-screen p-2 items-center mt-10 md:flex-row md:h-1/2 lg:flex-row lg:-mt-2 md:mb-10">
+      {/* ------------------------- left side mobile app view image------------------ */}
       <motion.div
         className="w-full h-1/2 px-6 md:w-1/2 md:full lg:w-1/2 lg:h-screen"
         initial={{ opacity: 0, x: -50 }}
@@ -15,6 +16,7 @@ const AppSection = () => {
       >
         <img src={app} alt="mobile app images" className="" />
       </motion.div>
+      {/* ------------------------- right side content and App Store/Apple Store logos --------------------- */}
       <motion.div
         className="mt-6 w-full h-1/2 flex flex-col gap-3 md:w-1/2 md:full lg:w-1/2"
         initial={{ opacity: 0, y: 50 }}

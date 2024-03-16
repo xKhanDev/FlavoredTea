@@ -17,6 +17,7 @@ const App = () => {
   return (
     <>
       <DataContext.Provider value={jsonData}>
+        {/* ------------------------- Background image setting------------------ */}
         <div className="w-full h-full">
           <img
             src={bg}
@@ -24,7 +25,7 @@ const App = () => {
             className="w-full h-full brightness-90 cover"
           />
         </div>
-
+        {/* ------------------------- Main components------------------ */}
         <div className="w-full md:p-4 md:my-0 md:mx-auto lg:p-10 lg:my-0 lg:mx-auto absolute left-0 top-0 backdrop-blur-[35px] bg-gray-400/50 overflow-x-hidden">
           <Navbar />
           <MainSection />
